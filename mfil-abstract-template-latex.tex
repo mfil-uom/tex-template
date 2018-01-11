@@ -1,0 +1,56 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[UKenglish]{babel} % Provides support for English ty­po­graph­i­cal and hyphen­ation rules
+\usepackage[margin=2.5cm]{geometry} % Provides margins
+\usepackage{unicode-math} % Provides support for fonts
+\setmainfont{Junicode} % Sets font for main text
+\setmathfont{Junicode} % Sets font for text in a maths environment
+\setmonofont{Courier New} % Sets font for any monospaced text (e.g. URLs)
+\sloppy % Relaxes rules for line breaks
+%\frenchspacing % Adjusts character spacing
+\linespread{1} % Adjusts line spacing
+\usepackage[hidelinks]{hyperref} % Hides coloured hyperlinks
+\usepackage[round]{natbib} % Provides bibliography management
+\bibpunct[:]{(}{)}{,}{a}{}{,} % Sets bibliography punctuation
+\setlength{\bibsep}{0em} % Gets rid of space between bibliography entries
+\usepackage{sectsty} % Provides changes for sizes of section headings
+\sectionfont{\normalsize} % Changes section headings to normal size
+\pagestyle{empty} % Removes any content in headers and footers
+\usepackage{float} % Provides options for table and figure placement
+\usepackage[labelfont=bf]{caption} % Set table and figure labels to bold
+\usepackage{booktabs} % Provides rules for tables
+\newcommand\email[1]{{\tt\href{mailto:#1}{#1}}} % Creates e-mail environment
+\begin{document}
+% Compile with XeLaTeX or LuaLaTeX and BibTeX
+\raggedbottom
+\begin{center}
+\textbf{Abstract title}\\
+\vspace{0.5em}
+\textit{Forename Surname, University or Institution (please, leave anonymous)}\\
+\vspace{0.25em}
+\email{forename.surname@university.ac.uk (please, leave anonymous)}
+\end{center}
+The following is an assortment of sample references: \cite{Bermúdez-Otero2007, Kauhanen2017, Nini2017, Turton2014, Walkden2014}.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec diam nisl, condimentum vel mauris ac, posuere porta arcu. Nullam aliquet urna nec est suscipit, et volutpat ipsum egestas. Duis feugiat convallis ante in fermentum. Etiam consectetur massa ante, pulvinar volutpat leo feugiat quis. Quisque arcu orci, ultrices eu erat quis, volutpat egestas erat. Etiam leo lorem, auctor nec sagittis nec, euismod sit amet nunc. Donec at bibendum diam. Ut quis massa a lacus dignissim ultricies. Integer fringilla congue dolor ut viverra. Vivamus commodo non est sit amet sollicitudin. Quisque semper sagittis dui, vitae congue nisl condimentum eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices consectetur mi, sed tempor tellus blandit in.
+
+In in ante tempus, aliquam mi eget, tincidunt augue. Sed eu arcu in risus luctus aliquam. Suspendisse at nulla nunc. Etiam suscipit facilisis nisl, at convallis erat gravida nec. Quisque at iaculis augue. Nunc diam quam, porttitor non auctor id, feugiat a arcu. Etiam ac libero turpis. Phasellus mauris dolor, venenatis quis laoreet at, egestas et ipsum. Ut at felis feugiat, elementum sem eu, aliquam tortor. Nulla eget quam bibendum, volutpat mi nec, volutpat massa. Mauris lacinia sollicitudin leo, eleifend convallis eros scelerisque quis. Cras hendrerit ultrices posuere. Nulla ac pulvinar orci. Etiam neque metus, semper venenatis metus suscipit, varius viverra sapien. Nunc hendrerit congue hendrerit. Etiam sit amet augue felis. Donec quis sollicitudin libero, commodo commodo lacus. Curabitur urna quam, consequat quis odio ac, efficitur lacinia enim. Integer eget auctor ex. Ut rhoncus augue enim, id faucibus arcu congue sit amet. Quisque dictum consectetur lorem, id laoreet erat tincidunt et. Suspendisse venenatis mi eu odio mollis hendrerit. Praesent metus leo, ultrices sit amet fermentum quis, faucibus nec nisl. Aenean fermentum interdum felis, condimentum pharetra purus ultrices in. Nullam in nisl sollicitudin, tincidunt tortor quis, eleifend tortor. Suspendisse elementum eleifend nisi, vitae semper leo rutrum vel. Aliquam sed facilisis ligula. Vivamus vestibulum, felis eu aliquam tempor, tortor odio laoreet mauris, vitae imperdiet est leo vel purus. Nam rutrum sodales tincidunt. Vestibulum aliquet, justo ut mollis consectetur, felis odio luctus sapien, at lacinia lorem sem ut purus. Ut malesuada quam molestie nunc egestas, non finibus nunc mollis. Duis ullamcorper lorem laoreet faucibus sodales. Ut augue neque, aliquam quis nulla in, egestas convallis lorem. Phasellus felis ante, ullamcorper et faucibus in, aliquet quis orci. Vestibulum convallis justo nec sem tincidunt porttitor. Pellentesque sapien enim, eleifend quis pulvinar sed, venenatis eget orci. In fringilla neque felis, et rutrum arcu suscipit sed.
+\begin{table}[H]
+\centering
+\begin{tabular}{cccc}
+\toprule
+& \textbf{Word 1} & \textbf{Word 2} & \textbf{Word 3} \\
+\midrule
+\textbf{Context 1} & 5\% & 20\% & 75\% \\
+\textbf{Context 2} & 20\% & 75\% & 5\% \\
+\textbf{Context 3} & 75\% & 5\% & 20\% \\
+\bottomrule
+\end{tabular}
+\caption{This is an example table}
+\label{table}
+\vspace{-1em}
+\end{table}
+Pellentesque pellentesque interdum augue a aliquam. Suspendisse lacinia justo turpis, non venenatis quam congue blandit. Donec blandit porta nisl. Vivamus condimentum elit non vehicula venenatis. Donec velit lacus, volutpat a dignissim sagittis, auctor id ligula. In a libero sit amet diam rhoncus vestibulum. Curabitur eget neque ut sapien tristique pulvinar sed quis urna. Cras fermentum augue a enim porttitor mollis. In id tortor velit. In hac habitasse platea dictumst. Nulla condimentum, odio at ornare aliquet, dui odio ullamcorper augue, eget venenatis tellus justo sed sem. Fusce congue rhoncus eleifend. Quisque sed auctor metus. Etiam sed leo scelerisque, bibendum risus accumsan, accumsan purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur facilisis neque id tellus blandit, a venenatis arcu tempor. Nunc lacinia vel dui sit amet hendrerit. Morbi elementum consectetur tellus. Suspendisse ullamcorper, nunc eget accumsan vestibulum, quam sem pretium turpis, eget efficitur quam elit at tellus. Proin eget pulvinar lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas quis tempor nulla.
+\renewcommand\bibname{References} % Change title of bibliography from `Bibliography' to `References'
+\bibliographystyle{./sp} % Specify bibliography style file
+\bibliography{./mfil-2018-sample-bibliography} % Specify bibliography file
+\end{document}
